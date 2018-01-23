@@ -33,16 +33,12 @@ public class StringLengthFX extends Application{
 				public void handle(ActionEvent event)
 				{
 					String input = txt.getText();
-					int count = 0;
-					for(int i = 0; i<input.length(); i++)
-				      {
-				         
-				         count++;
-				      }
-					lbl.setText(input + " is " + count + " characters long");
+					int length = input.length();
+					
+					lbl.setText(input + " is " + length + " characters long");
 					lbl2.setText("The first character is: " + input.charAt(0));		
 				   
-					System.out.println(count);
+					System.out.println(length);
 				}
 			
 				});
