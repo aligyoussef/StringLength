@@ -7,15 +7,9 @@ public class StringLength
       Scanner string = new Scanner(System.in);
       String input = string.nextLine();
       String firstChar = input.substring(0,1);
-      int count = 0;
+      int length = string.length();
       
-      for(int i = 0; i<input.length(); i++)
-      {
-         
-         count++;
-      }
-      
-      System.out.println(count);
+      System.out.println(length);
       System.out.println("First letter: " + firstChar);
    }
 }
